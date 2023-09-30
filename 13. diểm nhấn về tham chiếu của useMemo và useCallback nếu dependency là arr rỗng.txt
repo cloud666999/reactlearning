@@ -1,0 +1,33 @@
+Khi bạn sử dụng useMemo hoặc useCallback và cung cấp một dependency là một mảng rỗng ([]), 
+thì chúng không thể thay đổi tham chiếu tới ô nhớ cũ. Thay vào đó, chúng sẽ thực hiện tính toán lại và 
+tạo ra một tham chiếu mới mỗi khi component re-render.
+
+Một mảng rỗng làm cho useMemo hoặc useCallback không có dependency nào, và do đó, nó không theo dõi bất kỳ 
+sự thay đổi nào để kích hoạt lại hàm memoized hoặc callback. Vì vậy, mỗi khi component re-render, nó sẽ tạo 
+ra một tham chiếu mới cho hàm hoặc callback, và không bao giờ sử dụng tham chiếu cũ từ các phiên bản trước.
+
+
+import React, { useMemo, useCallback } from 'react';
+
+function MyComponent({ value }) {
+  // useMemo với dependency là mảng rỗng
+  const memoizedValue = useMemo(() => {
+    return value * 2;
+  }, []);
+
+  // useCallback với dependency là mảng rỗng
+  const memoizedCallback = useCallback(() => {
+    // Callback logic here
+  }, []);
+
+  return (
+    <div>
+      <p>Memoized Value: {memoizedValue}</p>
+      <button onClick={memoizedCallback}>Click Me</button>
+    </div>
+  );
+}
+
+
+Trong ví dụ này, cả memoizedValue và memoizedCallback sẽ được tính toán lại và có tham chiếu mới mỗi khi 
+component MyComponent re-render, bất kể giá trị value có thay đổi hay không.

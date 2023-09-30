@@ -1,0 +1,47 @@
+Trong React, "Component LifeCycle" đề cập đến chuỗi các giai đoạn hoặc giai đoạn mà một thành phần trải qua 
+
+từ khi tạo ra đến khi loại bỏ nó khỏi DOM (Mô hình đối tượng tài liệu). Việc hiểu các giai đoạn vòng đời này là 
+
+rất quan trọng để quản lý hành vi và tác dụng phụ của thành phần tại các thời điểm khác nhau trong quá trình tồn tại 
+
+của thành phần. Các thành phần lớp React theo truyền thống có các phương thức vòng đời, nhưng với React Hook, 
+
+bạn có thể đạt được khả năng kiểm soát tương tự với hook useEffect.
+
+
+
+1 Mounting Phase: (Giai đoạn Mount)
+
+hàm tạo: Hàm tạo được gọi khi một phiên bản của thành phần được tạo. Bạn thường khởi tạo các phương thức trạng thái 
+và liên kết trong giai đoạn này.
+
+render:  Phương thức kết xuất chịu trách nhiệm hiển thị JSX của thành phần cho DOM. Nó được yêu cầu trong 
+mọi thành phần.
+
+componentDidMount Phương thức này được gọi sau khi thành phần được hiển thị cho DOM. Nó thường được sử dụng cho 
+các tác vụ như tìm nạp dữ liệu, thiết lập đăng ký hoặc tương tác với DOM.
+
+2 Updating Phase: (Gian đoạn Update)
+shouldComponentUpdate:  Phương thức này xác định xem thành phần có nên hiển thị lại hay không khi trạng thái hoặc 
+đạo cụ của nó thay đổi. Theo mặc định, nó trả về true.
+
+render:  Phương thức kết xuất được gọi lại để cập nhật đầu ra của thành phần.
+
+componentDidUpdate: Phương thức này được gọi sau khi một thành phần đã được cập nhật trong DOM. Nó rất hữu ích 
+để thực hiện các tác dụng phụ khi trạng thái hoặc đạo cụ thay đổi.
+
+
+3 Unmounting Phase: (giai đoạn unmout)
+componentWillUnmount: Phương thức này được gọi ngay trước khi thành phần đó bị xóa khỏi DOM. Nó thường được sử 
+dụng để dọn dẹp, như hủy đăng ký đăng ký hoặc xóa trình xử lý sự kiện.
+
+Với sự ra đời của React Hooks, các phương thức vòng đời thành phần trong các thành phần lớp được thay thế bằng các 
+hook như useEffect, useState và các phương thức khác trong các thành phần chức năng. Đây là cách một số giai đoạn 
+trong vòng đời ánh xạ tới các hook:
+
+Mounting Phase: useEffect với một dependency trống ([]) phục vụ mục đích tương tự như  componentDidMount.
+ 
+Updating Phase: useEffect với các phần phụ thuộc cho phép bạn kiểm soát các tác dụng phụ khi state hoặc 
+props thay đổi, tương tự như componentDidUpdate.
+
+Unmounting Phase: Cleanup logic có thể được đặt bên trong hàm dọn dẹp được trả về bởi useEffect

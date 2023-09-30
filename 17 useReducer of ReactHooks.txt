@@ -1,0 +1,31 @@
++ useReducer là một hook khác trong React được sử dụng để quản lý logic trạng thái phức tạp trong các 
+  thành phần chức năng.
++ Nó thường được sử dụng khi bạn có các chuyển đổi trạng thái phụ thuộc vào trạng thái trước đó và liên quan 
+  đến các cập nhật phức tạp hoặc khi bạn cần quản lý nhiều giá trị như một phần của một đối tượng trạng thái.
++ Nó cung cấp một giải pháp thay thế cho việc sử dụng useState khi cập nhật trạng thái không chỉ liên quan đến 
+  việc đặt giá trị mới dựa trên giá trị trước đó.
+
+
+
+  syntax 
+  const [state, dispatch] = useReducer(reducer, initialArg, init);
+
+  The reducer function:  có hai đối số: trạng thái hiện tại và một hành động.
+  The dispatch function  được sử dụng để gửi các hành động tới reducer
+  The reducer tính toán trạng thái mới dựa trên trạng thái hiện tại và hành động rồi trả về state mới.
+
+
+  Những lợi ích:
+
+    useReducer rất phù hợp cho các tình huống quản lý trạng thái phức tạp.
+
+    Nó khuyến khích việc tách các chuyển đổi trạng thái thành một hàm giảm tốc tập trung.
+
+    Việc kiểm tra sẽ dễ dàng hơn vì bạn có thể kiểm tra logic bộ giảm tốc riêng biệt với thành phần.
+
+  Hạn chế:
+
+    Đối với các cập nhật trạng thái đơn giản, useState thường ngắn gọn hơn và dễ sử dụng hơn.
+
+    useReducer có thể làm cho mã dài dòng hơn để quản lý trạng thái đơn giản.
+

@@ -1,0 +1,13 @@
+ useEffect(() => {
+    //function bên trong useEffect sẽ được thực hiện 1 lần duy nhất khi component được render lần đầu tiên
+
+  },[])
+
+
+
+useEffect(() => {
+    // useEffect sẽ so sánh giá trị của các dependency này. so sánh giá trị hiện tại với giá trị trước đó, nếu có 
+    // thay đổi sẽ thực hiện lại function bên trong useEffect, nhưng component không bị re-render lại. 
+    // Component chỉ bị re-render khi có sự thay đổi trong các giá trị state hoặc props chính của component, 
+    không phải do useEffect thực hiện lại function.
+  },[any])

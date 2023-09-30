@@ -1,0 +1,1 @@
+nếu component cha trong React bị render lại thì component con cũng bị render lại

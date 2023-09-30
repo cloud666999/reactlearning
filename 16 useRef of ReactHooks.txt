@@ -1,0 +1,6 @@
+useRef là một hook trong React để lưu trữ lại một tham chiếu có thể thay đổi cho: 
+ + elements tử hoặc 
+ + values trong các lần hiển thị mà không gây ra các lần hiển thị lại khi chúng thay đổi. 
+   Không giống như useState, những thay đổi đối với giá trị useRef không kích hoạt việc hiển thị lại thành phần. 
+ + useRef thường được sử dụng để truy cập và tương tác với các phần tử DOM, 
+ + quản lý tiêu điểm và lưu trữ các giá trị có thể thay đổi mà không kích hoạt kết xuất lại.

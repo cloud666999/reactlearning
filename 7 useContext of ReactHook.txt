@@ -1,0 +1,23 @@
+Hook useContext là một hook React tích hợp cho phép bạn truy cập các giá 
+trị ngữ cảnh được cung cấp bởi thành phần Context.Provider trong components tree 
+của bạn. Nó cung cấp một cách để truyền dữ liệu và chức năng xuống components tree 
+mà không cần phải thông qua prop, giúp quản lý trạng thái hoặc chia sẻ thông tin giữa 
+các thành phần không được kết nối trực tiếp trong hệ thống phân cấp thành phần 
+dễ dàng hơn.
+
++ Công dụng của useContext, thay vì truyền qua từng cấp độ A->B->C thì có thể truyền
+từ A -> C
+
+
+3 Bước để sử dụng
+
+B1: Tạo useContext
+B2: Quyết định xem Context vừa được tạo sẽ sử dụng ở đâu , được bọc trong
+<Name.Provider></Name.Provider> và tất cả các components con bên trong  sẽ lấy 
+được dữ liệu từ useContext
+B3 : sử dụng (hay còn có thuật ngữ là Comsumer)
+    + sử dụng useContext
+    + sử dụng <Name.Comsumer></Name.Comsumer>
+
+thay vì truyền thông qua 3 component tôi đã tạo trong file useContext , tôi sẽ 
+sử dụng react hooks useContext

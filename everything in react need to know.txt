@@ -1,0 +1,62 @@
+//1 Components: React được cấu thành bởi các tập hợp Components tạo nên
+
+
+2 JSX (JavaScript XML): JSX là một phần mở rộng cú pháp cho JavaScript được sử dụng trong React để mô tả cấu trúc 
+của các thành phần UI. Nó cho phép bạn viết mã giống HTML trong các tệp JavaScript của mình.
+
+
+3 Props (Properties): được sử dụng để truyền dữ liệu từ Components cha xuống Components con
+
+4 State: quản lý trạng thái các Components, ví dụ như lưu trữ  và cập nhật thông tin ---> điều có thể ảnh hưởng 
+tới dữ liệu hiện thị ra của Components đó
+
+
+5 :Event Handling: React cung cấp cách xử lý các tương tác của người dùng thông qua xử lý sự kiện. 
+Bạn sẽ cần học cách phản hồi các hành động của người dùng như nhấp chuột và gửi biểu mẫu.
+
+
+6: Conditional Rendering (Hiển thị dữ liệu có điều kiện ): hiển thị có điều kiện các Components hoặc elements dựa trên 
+các điều kiện nhất định. Điều này thường được thực hiện bằng cách sử dụng các câu lệnh có điều kiện hoặc toán tử ba 
+ngôi.
+
+
+7 Lists and Keys: Tìm hiểu cách map các mảng và hiển thị danh sách các mục một cách hiệu quả. Key rất cần 
+thiết để React theo dõi và cập nhật các mục trong danh sách một cách chính xác.
+
+
+8: Forms : React cung cấp một cách để quản lý input của form và state của chúng. Hiểu các thành phần được kiểm soát
+ và cách xử lý việc gửi biểu mẫu.
+
+9  Component Lifecycle: Mặc dù vòng đời của thành phần dựa trên lớp ít phổ biến hơn khi giới thiệu các hook, 
+nhưng việc hiểu các phương thức vòng đời (ví dụ: ComponentDidMount, ComponentDidUpdate) và cách chúng hoạt động vẫn 
+rất có giá trị. 
+
+
+10 React Hooks: Làm quen với các móc khóa như useState, useEffect, useContext và useRef, những thứ này rất cần thiết 
+để quản lý trạng thái thành phần, tác dụng phụ và ngữ cảnh.
+
+11 React Router: Nếu ứng dụng của bạn liên quan đến nhiều trang hoặc chế độ xem, hãy tìm hiểu cách sử dụng 
+React Router để xử lý việc định tuyến và điều hướng trong ứng dụng của bạn.
+
+12 State Management Đối với các ứng dụng lớn hơn, hãy cân nhắc sử dụng các thư viện quản lý trạng thái như 
+Redux hoặc Mobx để quản lý và chia sẻ trạng thái giữa các thành phần một cách hiệu quả.
+
+13 Component Styling: Khám phá các cách tiếp cận khác nhau để tạo kiểu cho các thành phần React, chẳng hạn như 
+Mô-đun CSS, các thành phần được tạo kiểu hoặc sử dụng thư viện CSS-in-JS.
+
+14 Error Handling:: Hiểu ranh giới lỗi trong React và cách xử lý lỗi một cách khéo léo trong ứng dụng của bạn.
+
+15 Performance Optimization: (Tối ưu hóa hiệu năng:) Tìm hiểu các kỹ thuật để tối ưu hóa hiệu suất ứng dụng React 
+của bạn, chẳng hạn như ghi nhớ, ShouldComponentUpdate và sử dụng các công cụ tích hợp của React như 
+React.memo và useMemo.
+
+16 React Ecosystem (Hệ sinh thái React):Hãy theo dõi hệ sinh thái React rộng lớn hơn, bao gồm các công cụ như 
+Tạo ứng dụng React cho các dự án khởi động và các thư viện như Axios để thực hiện các yêu cầu API.
+
+17 Stateful vs. Stateless Components: (Các Component có trạng thái và không có trạng thái)
+: Hiểu khi nào nên sử dụng các stateful Component (class) và khi nào nên sử dụng các
+ Component (chức năng) stateless.
+
+
+18:Hooks Rules and Patterns : Tìm hiểu các quy tắc và mẫu liên quan đến việc sử dụng hook, chẳng hạn như mảng 
+phụ thuộc trong useEffect và tạo hook tùy chỉnh.

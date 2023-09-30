@@ -1,0 +1,8 @@
+Cách useEffect hoạt động
+
+
+useEffect là một hook trong React cho phép bạn thực hiện các tác dụng phụ trong các thành phần chức năng của mình. 
+Tác dụng phụ là các hành động xảy ra bên ngoài luồng thông thường của thành phần, 
+chẳng hạn như tìm nạp dữ liệu, thao tác DOM, đăng ký hoặc bất kỳ hoạt động không đồng bộ nào. 
+useEffect giúp bạn quản lý các tác dụng phụ này và giữ cho hoạt động của thành phần được đồng bộ hóa với dữ liệu và 
+trạng thái của ứng dụng.

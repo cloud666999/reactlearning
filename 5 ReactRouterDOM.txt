@@ -1,0 +1,13 @@
+React Router DOM là một thư viện phổ biến trong hệ sinh thái React cung cấp 
+khả năng định tuyến và điều hướng cho các ứng dụng một trang (SPA). 
+Nó cho phép bạn tạo và quản lý các tuyến đường khác nhau trong ứng dụng React 
+của mình, cho phép bạn điều hướng giữa các chế độ xem hoặc thành phần khác nhau 
+mà không cần tải lại toàn bộ trang.
+
+
+npm i react-router-dom
+
+tôi khởi tạo trong App.js import  
+import { BrowserRouter, Route, Routes } from 'react-router-dom';    
+
+và tự tạo các bộ định tuyến trong tại App.js

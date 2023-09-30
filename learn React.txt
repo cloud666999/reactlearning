@@ -1,0 +1,32 @@
+1 React Component
+2 State
+3 React dev tool
+4 DOM events
+5 Changing State
+6 Intro to forms
+7 Nesting Components
+8 Props
+9 Outputting Lists
+10 Stateless/Statefull Component (Function/Class Components)
+11 Conditional Output
+12 Split Components
+13 Functions as props
+14 Deleting Data
+15 Recap and Virtual dom
+16 CSS files
+17 LifeCycle methods
+18 TODO apps (CRUD)
+19 React routes
+20 Link , navLinks
+21 Redirect
+22 Higher Order Components
+23 Using Axios
+24 Route parameters
+25 Switch tags
+26 importing images
+27 Introduce to redux
+28 Redux Stores, Actions Reducers
+29 Setup Redux in React App
+30 Mapping State to props
+31 Blogs detail Pages
+32 Map Dispatch to props

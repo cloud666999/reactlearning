@@ -1,0 +1,4 @@
+là 1 trang nằm trong trang lớp của web , bấm vào đó nhưng trang ko bị load lại --> SPA --> (Điển hình như các công ty 
+chứng khoán với giá cần cập nhật liên tục ---> cần hiệu năng cao)
+
+vậy về cơ bản là toàn bộ ứng dụng sẽ tồn tại  chỉ trong 1 tệp index.html duy nhất

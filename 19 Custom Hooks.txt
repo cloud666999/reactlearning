@@ -1,0 +1,4 @@
+custom hook đơn thuần cũng là 1 function tuân theo quy ước đặt tên cụ thể (nó phải bắt đầu bằng "use") 
+và gói gọn logic có thể sử dụng lại liên quan đến một mối quan tâm hoặc tính năng cụ thể. custom hook cho phép bạn
+ + trừu tượng hóa và chia sẻ logic trạng thái cũng như các tác dụng phụ trên nhiều thành phần, 
+ +thúc đẩy việc tái sử dụng mã và tính mô-đun trong các ứng dụng React của bạn.

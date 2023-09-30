@@ -1,0 +1,8 @@
+
+    // ở trong js khi thực hiện việc gán 1 biến = 1 function , array , object thì đó là 1 tham chiếu 
+    //# với tham trị
+    // ví dụ về tham trị : let a = 3 , let b = 3 , a === b -> true
+
+    // nhưng ngược lại với object, array , function khi chúng ta thực hiện việc gán giá trị cho 1 biến
+    // ví dụ  let a = function c , let b = function c , a === b  -> false  ở đây nó ko gán giá trị mà là gán
+    // 1 địa chỉ trong bộ nhớ vậy nên a và b đang tham trị tới 2 ô nhớ khác nhau

@@ -1,0 +1,16 @@
+Redux có thể sử dụng trong các dự án lớn nhỏ,  còn useContext chỉ có thể sử 
+dụng trong dự án nhỏ
+
+
+tôi đã tạo 1 folder Context trong useContext
+
+để tạo context tôi đã tạoexport const RenderContext = createContext({});
+
+export const AppProviver = ({children}) => {
+    return  <RenderContext.Provider>
+        {children}
+    </RenderContext.Provider>
+}
+
+
+tại những nơi tôi muốn sử dụng tôi sẽ bọc <RenderContext.Provider></RenderContext.Provider>

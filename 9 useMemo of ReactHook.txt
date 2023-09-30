@@ -1,0 +1,19 @@
+useMemo là một hook trong React được sử dụng để ghi nhớ. 
+Ghi nhớ là một kỹ thuật tối ưu hóa trong đó kết quả của 
+các phép tính tốn kém được lưu vào bộ đệm để nếu cần thực hiện lại phép tính tương tự, nó có thể được truy xuất 
+từ ​​bộ đệm thay vì tính toán lại. Trong React, useMemo thường được sử dụng để tối ưu hóa hiệu suất của một 
+thành phần bằng cách ghi nhớ kết quả tính toán có thể tốn kém về thời gian CPU hoặc kết xuất.
+
+
+useMemo là 1 hook với cơ chế Memorization dùng để lưu trữ 1 expensive function khi  component được mount vào , 
+nó sẽ lấy kết quả được thực thi gần nhất trong bộ nhớ  để tránh việc bị re render lại 
+
+- nếu ko truyền gì vào dependency của useMemo này  thì đoạn code sẽ thực thi 1 lần khi được mount vào
+  và sẽ không thực thi lại khi bị re-render lại
+- nếu trong hàm useMemo có 1 dependency chứa 1 biến num, nếu biến num có thay đổi thì useMemo sẽ lưu trữ giá 
+trị mới nhất của expensive  funtion , ngoài ra nếu còn truy xuất tới biến khác thì cũng có thể nhét vào trong 
+dependency này
+
+---> vậy chỉ nên dùng useMemo trong trường hợp cần cải thiện performance khi mà function thực thi mất quá nhiều
+thời gian để tính toán , và khi cùng truyền 1 tham số đầu vào chúng đều trả ra 1 kết quả giống nhau --> mới nên
+sử dụng useMemo

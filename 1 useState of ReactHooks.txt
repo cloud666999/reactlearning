@@ -1,0 +1,4 @@
+useState là một hook trong React cho phép bạn thêm trạng thái vào một thành phần chức năng. 
+Nó được sử dụng để quản lý và cập nhật dữ liệu trạng thái trong một thành phần chức năng, 
+đây là một cách để lưu trữ và thao tác các giá trị có thể thay đổi theo thời gian và kích hoạt kết xuất 
+lại thành phần khi chúng thực hiện.

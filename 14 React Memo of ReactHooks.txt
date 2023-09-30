@@ -1,0 +1,8 @@
+React.memo là thành phần bậc cao hơn (HOC) do React cung cấp, được sử dụng để tối ưu hóa các thành phần chức 
+năng bằng cách ngăn chặn việc hiển thị lại không cần thiết. Về khái niệm, nó tương tự như ShouldComponentUpdate 
+trong các thành phần lớp nhưng được thiết kế cho các thành phần chức năng.
+
+
+Khi bạn bọc một thành phần chức năng bằng React.memo, nó sẽ ghi nhớ thành phần đó và chỉ hiển thị lại khi 
+prop của nó thay đổi. Điều này có thể giúp giảm chi phí hiển thị cho các thành phần không phụ thuộc vào những 
+thay đổi trong prop của chúng.

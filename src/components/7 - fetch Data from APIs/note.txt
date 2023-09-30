@@ -1,0 +1,1 @@
+hãy xem fetch và axios trong file Text.js

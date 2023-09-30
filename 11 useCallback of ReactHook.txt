@@ -1,0 +1,10 @@
+useCallback là một hook khác trong React được sử dụng để tối ưu hóa hiệu suất. Nó chủ yếu được sử dụng để 
+ghi nhớ các hàm gọi lại và ngăn chúng được tạo lại trong mỗi lần kết xuất. Điều này có thể có ích trong các 
+tình huống mà bạn chuyển lệnh gọi lại dưới prop cho các component children, đặc biệt nếu các component children
+sử dụng đẳng thức tham chiếu để phát hiện các thay đổi trong props.
+
+sử dụng useCallback khi nào ?
+
+1 Bạn có  callback function mà bạn chuyển dưới dạng  prop  cho  child component.
+2 Hàm gọi lại phụ thuộc vào một hoặc nhiều giá trị có thể thay đổi giữa các lần hiển thị.
+3 Bạn muốn tránh việc tạo lại chức năng gọi lại một cách không cần thiết trên mỗi lần kết xuất.
